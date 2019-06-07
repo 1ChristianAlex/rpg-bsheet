@@ -11,6 +11,14 @@ export const BholderLogo = styled(NavLink)`
 `;
 export const BhNavLink = styled(NavLink)`
   color: red;
+  display: block;
+  padding: 0.5rem 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+`;
+export const LoginHeader = styled(Nav)``;
+export const NavMenuItem = styled.div`
+  width: 100%;
 `;
 
 console.log(Nav.Link);
