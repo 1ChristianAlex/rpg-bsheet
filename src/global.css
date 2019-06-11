@@ -5,3 +5,9 @@ body {
 .logo {
   font-family: 'Permanent Marker', cursive;
 }
+.header-menu-item a {
+  color: white !important;
+}
+.header-menu-item .dropdown-menu {
+  background: #2f3135;
+}
