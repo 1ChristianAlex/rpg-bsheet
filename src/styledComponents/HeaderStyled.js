@@ -61,3 +61,29 @@ export const FormHeaderSearch = {
     border: 1px solid ${colors.logoColor};
   `
 };
+export const ImgMenu = {
+  img: styled.img`
+    height: 180px;
+    width: auto;
+    & :hover {
+      height: 200px;
+    }
+  `,
+  content: styled.div`
+    position: relative;
+  `,
+  text: styled.span`
+    position: absolute;
+    font-size: 15pt;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  `
+};
+export const HeaderDropwn = {
+  DropdownMenu: styled(NavDropdown)`
+    display: flex;
+    flex-direction: row;
+  `
+};

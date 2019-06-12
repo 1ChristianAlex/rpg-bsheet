@@ -11,3 +11,6 @@ body {
 .header-menu-item .dropdown-menu {
   background: #2f3135;
 }
+.header-menu-item .dropdown-menu.show {
+  display: flex;
+}

@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
-import { BholderLogo, BhNavLink, HeaderNavBar, HeaderNavCollapse, HeaderNav, FormHeaderSearch, HeaderBh } from '../styledComponents/HeaderStyled';
+import {
+  BholderLogo,
+  BhNavLink,
+  HeaderNavBar,
+  HeaderNavCollapse,
+  HeaderNav,
+  FormHeaderSearch,
+  HeaderBh,
+  ImgMenu,
+  HeaderDropwn
+} from '../styledComponents/HeaderStyled';
+import { Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import mycampain from '../assets/imagens/mycampain.jpg';
+import mycreation from '../assets/imagens/mycreation.jpg';
 
 export default class Header extends Component {
   render() {
@@ -25,15 +37,22 @@ export default class Header extends Component {
           </FormHeaderSearch.Nav>
           <HeaderNavCollapse id="basic-navbar-nav">
             <HeaderNav>
-              <BhNavLink to="teste">Teste</BhNavLink>
-              <NavDropdown title="Criação" className="header-menu-item">
+              <HeaderDropwn.DropdownMenu title="Criação" className="header-menu-item">
                 <BhNavLink className="dropdown-item" to="#action/3.1">
-                  Action
+                  <ImgMenu.content>
+                    <ImgMenu.img src={mycampain} alt="" srcset="" />
+                    <ImgMenu.text>Minha Campanha</ImgMenu.text>
+                  </ImgMenu.content>
                 </BhNavLink>
-                <BhNavLink to="#action/3.2">Meus personagens</BhNavLink>
+                <BhNavLink className="dropdown-item" to="#action/3.1">
+                  <ImgMenu.content>
+                    <ImgMenu.img src={mycreation} alt="" srcset="" />
+                    <ImgMenu.text>Minhas Criações</ImgMenu.text>
+                  </ImgMenu.content>
+                </BhNavLink>
                 <BhNavLink to="#action/3.3">Minhas campanhas</BhNavLink>
-              </NavDropdown>
-              <NavDropdown title="Fontes" className="header-menu-item">
+              </HeaderDropwn.DropdownMenu>
+              <HeaderDropwn.DropdownMenu title="Fontes" className="header-menu-item">
                 <BhNavLink className="dropdown-item" to="#action/3.1">
                   Action
                 </BhNavLink>
@@ -41,16 +60,15 @@ export default class Header extends Component {
                 <BhNavLink to="#action/3.3">Something</BhNavLink>
 
                 <BhNavLink to="#action/3.4">Separated link</BhNavLink>
-              </NavDropdown>
-              <NavDropdown title="Ferramentas" className="header-menu-item">
+              </HeaderDropwn.DropdownMenu>
+              <HeaderDropwn.DropdownMenu title="Ferramentas" className="header-menu-item">
                 <BhNavLink className="dropdown-item" to="#action/3.1">
                   Action
                 </BhNavLink>
                 <BhNavLink to="#action/3.2">Another action</BhNavLink>
                 <BhNavLink to="#action/3.3">Something</BhNavLink>
-
                 <BhNavLink to="#action/3.4">Separated link</BhNavLink>
-              </NavDropdown>
+              </HeaderDropwn.DropdownMenu>
             </HeaderNav>
           </HeaderNavCollapse>
         </HeaderNavBar>
