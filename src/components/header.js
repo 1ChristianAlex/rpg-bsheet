@@ -13,8 +13,8 @@ import {
 import { Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import mycampain from '../assets/imagens/mycampain.jpg';
-import mycreation from '../assets/imagens/mycreation.jpg';
+import mycampain from '../assets/imagens/menu-img/mycampain.jpg';
+import mycreation from '../assets/imagens/menu-img/mycreation.jpg';
 
 export default class Header extends Component {
   render() {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import colors from './defaultColors';
+import colors from './default';
 import { Navbar, Nav, Form, Button, FormControl, NavDropdown } from 'react-bootstrap';
 
 export const HeaderBh = styled.header`

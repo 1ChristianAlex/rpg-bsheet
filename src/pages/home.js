@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import { BannerHome } from '../components/homeComponents/bannerHome';
+import { PostSection } from '../components/homeComponents/postSection';
+import { Stones } from '../components/homeComponents/shotStones';
 
 export default class Home extends Component {
   render() {
-    return <h1>Hello next </h1>;
+    return (
+      <>
+        <BannerHome />
+        <PostSection />
+        <Stones />
+      </>
+    );
   }
 }

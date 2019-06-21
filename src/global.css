@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,500,900|Permanent+Marker&display=swap');
 body {
   font-family: 'Noto Sans HK', sans-serif;
+  overflow-x: hidden;
 }
 .logo {
   font-family: 'Permanent Marker', cursive;
